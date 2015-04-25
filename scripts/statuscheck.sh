@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 timePeriod=60  # time to check status  ... measured in seconds 
 
-declare -a slaveAddress=('54.201.73.228' '54.186.213.92' '54.186.160.154');
+declare -a slaveAddress=('52.10.193.215' '54.149.199.57' '54.213.114.135');
 
 
 emailContentStr=" ... this AWS instance was shutdown unexpectedly ! ";
