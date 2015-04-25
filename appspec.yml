@@ -20,6 +20,3 @@ hooks:
    AfterInstall:
     - location: scripts/restartapache.sh
       runas: root
-   ApplicationStart:
-    - location: scripts/checkstatus.sh
-      
