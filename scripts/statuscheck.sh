@@ -19,7 +19,7 @@ do
         if [ -z "$response" ] ; then
             echo "Alert ! $slave is down ! ";
             echo "   " ;
-            echo "$slave .... $emailContentStr" | mail -s "$slave $emailSubjectStr"  $emailAddr ;
+            echo "$slave .... $emailContentStr" | mail -r admin-EC2@aws -s "$slave $emailSubjectStr"  $emailAddr ;
         else
            echo "Our web application is running is just fine on $slave . See response below: ";
            curl -Is $slave | head -1;
