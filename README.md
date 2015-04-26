@@ -1,6 +1,6 @@
 
 ## DevOps Course Project - Special Milestone
-Team - Akond Rahman, Nitin Sharma, Sakthi Sambasivam
+####Team - Akond Rahman, Nitin Sharma, Sakthi Sambasivam
 
 ###Demonstration of Chaos Monkey
 
