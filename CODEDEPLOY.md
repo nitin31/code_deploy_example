@@ -23,4 +23,14 @@ The scripts folder has four files:
 * `installapache.sh` - This file automatically installs apache when the instance is created and this code is deployed.
 * `restartapache.sh` - Restarts apache server
 * `startapache.sh` - Starts apache server
-* `statuscheck.sh` - This script is used only on the master instance. It is responsible for checking availability of slave instances, sending alert emails, making changes to modproxy settings when an instance goes down or restarts again. 
+* `statuscheck.sh` - This script is used only on the master instance. It is responsible for checking availability of slave instances, sending alert emails, making changes to modproxy settings when an instance goes down or restarts again.  
+  
+Next is `appspec.yml` - This file is used to configure aws instance before and after installation of apache.  
+
+The `aws.py` file is not used on any instances, but it is responsible for demonstrating Chaos Monkey.
+* It uses the `boto.ec2` api to interact with EC2
+* It maintains a list of all slave instances.
+* It randomly selects an instance from the list and shuts it down.
+
+
+`index.html` is a simple web page that is served to demonstrate a simple application. In real life scenarios, any application can take its place. 
