@@ -2,6 +2,8 @@
 ## DevOps Course Project - Special Milestone
 ####Team - Akond Rahman, Nitin Sharma, Sakthi Sambasivam
 
+Screencast video linked [here](https://vid.me/PfqL)
+
 ###Demonstration of Chaos Monkey
 
 To demonstrate Chaos Monkey, we have a Master-Slave architecture. The master node is assumed to be always up (in real life scenairos, we can introduce redundancy in masters to achieve this goal). 
